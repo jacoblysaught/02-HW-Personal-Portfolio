@@ -1,0 +1,133 @@
+*{
+    margin: 0%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1%;
+    background-color: darkcyan;
+    color:aliceblue;
+}
+
+h1 {
+    margin: 0%;
+    margin-top: 0px;
+    font-size: 200%;
+    background-color:rgb(131, 241, 241);
+    color: black;
+}
+
+nav ul {
+    display: inline-flex;
+    justify-content: space-between;
+    min-width: 350px;
+    font-size: 130%;
+    text-decoration: underline;
+    list-style: none;
+    margin-right: 100px;
+}
+
+aside {
+    margin-left: 6%;
+    font-size: 150%;
+}
+
+p {
+    margin-left: 20%;
+    margin-right: 100px;
+    border-left: 2px solid rgba(233, 131, 6, 0.733);
+    padding-left: 1.5%;
+}
+
+.stack {
+    width: 750px;
+    height: 40px;
+    border: 5px solid darkcyan;
+    padding: 150px;
+    margin-left: 400px;
+    margin-right: 100px
+}
+
+.box{
+    display: flex;
+}
+
+.node {
+    width: 375px;
+    height: 10px;
+    border: 5px solid darkcyan;
+    padding: 75px;
+    margin-left: 400px;
+    margin-right: 100px;
+    margin-top: 1%;
+}
+
+.java {
+    width: 375px;
+    height: 10px;
+    border: 5px solid darkcyan;
+    padding: 75px;
+    margin-left: 400px;
+    margin-right: 100px;
+    margin-top: 1%;
+}
+.mern {
+    width: 375px;
+    height: 10px;
+    border: 5px solid darkcyan;
+    padding: 75px;
+    margin-left: 400px;
+    margin-right: 100px;
+    margin-top: 1%;
+}
+.css {
+    width: 375px;
+    height: 10px;
+    border: 5px solid darkcyan;
+    padding: 75px;
+    margin-left: 400px;
+    margin-right: 100px;
+    margin-top: 1%;
+}
+
+footer {
+    display:flex;
+    position:relative;
+    bottom: 0;
+    width: 75%;
+    height: 25px;
+    padding: 75px;
+    background-color: white;
+    color: black;
+    font-size: 120%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 25%
+    }
+    .stack{
+        width: 50%;
+    }
+    header {
+        background: rgb(90, 20, 220);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 20%
+    }
+    .stack{
+        width: 40%;
+    }
+    header {
+        background: rgb(33, 20, 220);
+    }
+}
+    
