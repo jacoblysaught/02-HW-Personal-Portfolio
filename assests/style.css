@@ -1,5 +1,6 @@
 *{
-    margin: 0%;
+    margin: 0;
+    padding: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 header {
@@ -7,28 +8,62 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     padding: 1%;
-    background-color: darkcyan;
+    background-color: rgb(17, 17, 17);
     color:aliceblue;
+    position: relative;
+    height: 40px;
 }
 
 h1 {
-    margin: 0%;
+    margin-left: -1%;
     margin-top: 0px;
     font-size: 200%;
     background-color:rgb(131, 241, 241);
     color: black;
+    width: 13%;
+    padding-left: 40px;
+    padding-bottom: 5px;
 }
 
+
 nav ul {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     min-width: 350px;
     font-size: 130%;
     text-decoration: underline;
     list-style: none;
     margin-right: 100px;
+    padding: 10px;
 }
 
+.nav-links li a::after{
+    content: "";
+    background: rgba(233, 131, 6, 0.733);
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 1s;
+}
+
+li a:hover::after{
+    width: 100%;
+
+}
+.banner{
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+.banner > .banner-image {
+    width: 100%;
+    height: 200px;
+    display: block;
+
+}
 aside {
     margin-left: 6%;
     font-size: 150%;
@@ -47,11 +82,22 @@ p {
     border: 5px solid darkcyan;
     padding: 150px;
     margin-left: 400px;
-    margin-right: 100px
+    margin-right: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    background-image: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+
 }
 
 .box{
-    display: flex;
+    width: 200px;
+    height: 100px;
+    border: 3px solid darkcyan;
+    background-color: darkcyan;
+    position: relative;
+    
+    
+
 }
 
 .node {
@@ -62,7 +108,12 @@ p {
     margin-left: 400px;
     margin-right: 100px;
     margin-top: 1%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNvZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
+
 
 .java {
     width: 375px;
@@ -72,7 +123,11 @@ p {
     margin-left: 400px;
     margin-right: 100px;
     margin-top: 1%;
+    display: flex;
+    flex-flow: row wrap;
+    background-image: url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
+
 .mern {
     width: 375px;
     height: 10px;
@@ -81,6 +136,7 @@ p {
     margin-left: 400px;
     margin-right: 100px;
     margin-top: 1%;
+    background-image: url(https://images.unsplash.com/photo-1496096265110-f83ad7f96608?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHRlY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
 }
 .css {
     width: 375px;
@@ -90,6 +146,7 @@ p {
     margin-left: 400px;
     margin-right: 100px;
     margin-top: 1%;
+    background-image:url(https://media.istockphoto.com/photos/circuit-blue-board-background-copy-space-computer-data-technology-picture-id1340728386?b=1&k=20&m=1340728386&s=170667a&w=0&h=FQ7GuNOoq7JzCwb4YWJZ3iyMxky5hAaVnFf7VcQ-dA0=)
 }
 
 footer {
@@ -115,9 +172,28 @@ footer {
         width: 50%;
     }
     header {
-        background: rgb(90, 20, 220);
+        background: rgb(17, 17, 17);
+        height: 100px;
+    }
+    nav ul {
+            margin-right: 0;
+            font-size: 125%;
+            padding-right: 140px;
+            padding-top: 30px;
+    }
+    body {
+        flex-flow: row;
+        
+    }
+    .box{
+        width: 50%;
+    }
+    h1 {
+        padding-right: 100px;
+        
     }
 }
+
 
 @media screen and (max-width: 768px) {
     .container {
@@ -127,7 +203,18 @@ footer {
         width: 40%;
     }
     header {
-        background: rgb(33, 20, 220);
+        background: rgb(17, 17, 17);
+        height: 100px;
+    }
+    nav ul {
+        font-size: 90%;
+        display: block;
+        padding-left: 100px;
+        padding-top: 30px;
+    }
+    h1 {
+        padding-right: 100px;
+        
     }
 }
     
