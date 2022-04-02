@@ -83,6 +83,7 @@ aside {
     display:block;
     justify-content: space-between;
 }
+
 #about {
     font-size: 225%;
     margin-left: 175px;
@@ -116,8 +117,6 @@ p {
     padding: 150px;
     margin-left: 550px;
     margin-right: 100px;
-    display: flex;
-    flex-flow: row wrap;
     background-image: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
 .stack .box {
@@ -131,7 +130,9 @@ p {
     padding-bottom: 0px;
     color: antiquewhite;
     font-family:monospace;
+
 }
+
 .node {
     float: right;
     width: 375px;
@@ -141,14 +142,11 @@ p {
     margin-left: 400px;
     margin-right: 286px;
     margin-top: 1%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     background-image: url(https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNvZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 .node .box {
-    margin-right: 293px;
+  margin-right: 293px;
 }
 
 .java {
@@ -159,8 +157,6 @@ p {
     margin-left: 550px;
     margin-right: 100px;
     margin-top: 1%;
-    display: flex;
-    flex-flow: row wrap;
     background-image: url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
 
@@ -173,7 +169,6 @@ p {
     margin-left: 400px;
     margin-right: 286px;
     margin-top: 1%;
-    position: relative;
     background-image: url(https://images.unsplash.com/photo-1496096265110-f83ad7f96608?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHRlY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
 }
 .css {
@@ -205,13 +200,12 @@ footer p {
     margin-left: 210px;
 }
 
-@media screen and (max-width: 992px) {
-    .container {
-        width: 25%
-    }
-    .stack{
-        width: 50%;
-    }
+footer a:hover {
+    color: darkcyan;
+}
+
+@media screen and (max-width: 1800px) {
+
     header {
         background: rgb(17, 17, 17);
         height: 100px;
@@ -220,10 +214,6 @@ footer p {
         font-size: 125%;
         padding-top: 30px;
     }
-    body {
-        flex-flow: row;
-        
-    }
     h1 {
         padding-right: 100px;
         
@@ -231,16 +221,15 @@ footer p {
     footer {
         margin-left: -80px;
     }
+    
 }
 
+@media screen and (max-width: 1200px) {
+    
+}
 
-@media screen and (max-width: 768px) {
-    .container {
-        width: 20%
-    }
-    .stack{
-        width: 40%;
-    }
+@media screen and (max-width: 800px) {
+    
     header {
         background: rgb(17, 17, 17);
         height: 100px;
@@ -253,18 +242,19 @@ footer p {
         letter-spacing: 3px;
     }
     #about{
-        margin-left: 190px;
+        margin-left: 150px;
     }
     p {
-        margin-left: 180px;
+        margin-left: 100px;
     }
     h1 {
         padding-right: 100px;
         
     }
     footer {
-        margin-left: -175px;
-        font-size: 100%;
+        margin-left: 0px;
+        font-size: 120%;
+        display: block;
     }
 
 }
