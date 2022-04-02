@@ -44,6 +44,8 @@ a:visited {
 
 a:hover {
     color:white;
+    font-size: larger;
+    transition: 1s;
 }
 
 .nav-links li a::after{
@@ -87,7 +89,7 @@ aside {
 #about {
     font-size: 225%;
     margin-left: 175px;
-    margin-top: 60px;
+    margin-top: 25px;
 
 }
 #contact {
@@ -99,34 +101,41 @@ aside {
     font-size: 225%;
     margin-left: 200px;
     margin-top: 0px;
+    margin-bottom: 20px;
 }
 p {
-    margin-top: 0px;
+    margin-top: 25px;
     margin-left: 20%;
     margin-right: 100px;
     border-left: 2px solid rgba(233, 131, 6, 0.733);
-    padding-left: 1.5%;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-left: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     line-height: 150%;
 }
+.containers {
+    border-left: 2px solid rgba(233, 131, 6, 0.733);
+}
 .stack {
-    width: 750px;
+    width: 746px;
     height: 40px;
     border: 5px solid darkcyan;
-    padding: 150px;
+    padding: 160px;
     margin-left: 550px;
-    margin-right: 100px;
+    margin-right: 268px;
     background-image: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    
 }
 .stack .box {
-    margin-left: -150px;
+    margin-left: -162px;
+    margin-top: 80px;
 }
 .box{
     width: 150px;
     height: 50px;
     background-color: darkcyan;
-    margin-left: -75px;
+    margin-left: -77px;
+    margin-top: 10px;
     padding-bottom: 0px;
     color: antiquewhite;
     font-family:monospace;
@@ -136,26 +145,22 @@ p {
 .node {
     float: right;
     width: 375px;
-    height: 10px;
+    height: 20px;
     border: 5px solid darkcyan;
     padding: 75px;
-    margin-left: 400px;
-    margin-right: 286px;
+    margin-left: 550px;
+    margin-right: 268px;
     margin-top: 1%;
     background-image: url(https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNvZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
 
-.node .box {
-  margin-right: 293px;
-}
-
 .java {
     width: 375px;
-    height: 10px;
+    height: 20px;
     border: 5px solid darkcyan;
     padding: 75px;
     margin-left: 550px;
-    margin-right: 100px;
+    margin-right: 268px;
     margin-top: 1%;
     background-image: url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dGVjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
 }
@@ -163,21 +168,21 @@ p {
 .mern {
     float: right;
     width: 375px;
-    height: 10px;
+    height: 20px;
     border: 5px solid darkcyan;
     padding: 75px;
-    margin-left: 400px;
-    margin-right: 286px;
+    margin-left: 550px;
+    margin-right: 268px;
     margin-top: 1%;
     background-image: url(https://images.unsplash.com/photo-1496096265110-f83ad7f96608?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHRlY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
 }
 .css {
     width: 375px;
-    height: 10px;
+    height: 20px;
     border: 5px solid darkcyan;
     padding: 75px;
     margin-left: 550px;
-    margin-right: 100px;
+    margin-right: 268px;
     margin-top: 1%;
     background-image:url(https://images.unsplash.com/photo-1548092372-0d1bd40894a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fHRlY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
 }
@@ -202,6 +207,8 @@ footer p {
 
 footer a:hover {
     color: darkcyan;
+    font-size: larger;
+    transition: .5s;
 }
 
 @media screen and (max-width: 1800px) {
@@ -221,14 +228,37 @@ footer a:hover {
     footer {
         margin-left: -80px;
     }
-    
+    .containers {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: -100px;
+        padding-right: 0px;
+    }
 }
 
-@media screen and (max-width: 1200px) {
-    
+@media screen and (max-width: 1000px) {
+    .containers {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: -300px;
+        padding-right: 0px;
+    }
+
+    .stack {
+        height: 150px;
+        width: 128px;
+    }
+    footer {
+        margin-top: 75px;
+        margin-left: 150px;
+        font-size: 120%;
+        display: block;
+    }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     
     header {
         background: rgb(17, 17, 17);
@@ -237,7 +267,7 @@ footer a:hover {
     nav ul {
         font-size: 100%;
         display: block;
-        padding-left: 90px;
+        padding-left: 85px;
         padding-top: 8px;
         letter-spacing: 3px;
     }
@@ -252,10 +282,25 @@ footer a:hover {
         
     }
     footer {
+        margin-top: 50px;
         margin-left: 0px;
         font-size: 120%;
         display: block;
     }
+    footer a:hover {
+        font-size: 200%;
+        transition: .5s;
+    }
+    .containers {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: -545px;
+    }
+    .stack {
+        width: 205px;
+    }
 
+    
 }
     
