@@ -38,6 +38,14 @@ nav ul {
     padding: 10px;
 }
 
+a:visited {
+    color: orange;
+}
+
+a:hover {
+    color:white;
+}
+
 .nav-links li a::after{
     content: "";
     background: rgba(233, 131, 6, 0.733);
