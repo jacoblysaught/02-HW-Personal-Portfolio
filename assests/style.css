@@ -212,10 +212,8 @@ footer p {
     border-left: 2px solid rgba(212, 35, 11, 0.733);
     padding-left: 40px;
     margin-left: 185px;
-    color: bisque;
-    
+    color: bisque; 
 }
-
 footer a:hover {
     color: darkcyan;
     font-size: larger;
