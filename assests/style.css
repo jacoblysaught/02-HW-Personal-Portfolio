@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(67, 81, 110);
 }
 header {
     display: flex;
@@ -9,7 +10,7 @@ header {
     align-items: flex-start;
     padding: 1%;
     background-color: rgb(17, 17, 17);
-    color:aliceblue;
+    color:rgb(15, 41, 65);
     position: relative;
     height: 40px;
 }
@@ -18,7 +19,7 @@ h1 {
     margin-left: -1%;
     margin-top: 0px;
     font-size: 200%;
-    background-color:rgb(131, 241, 241);
+    background-color:rgb(97, 138, 151);
     color: black;
     width: 13%;
     padding-left: 40px;
@@ -36,27 +37,33 @@ nav ul {
     list-style: none;
     margin-right: 100px;
     padding: 10px;
+    background-color: rgb(17,17,17);
 }
-
+a {
+    background-color: rgb(17,17,17);
+}
 a:visited {
-    color: orange;
+    color: rgb(179, 179, 255);
 }
 
 a:hover {
     color:white;
     font-size: larger;
-    transition: 1s;
+    transition: .5s;
 }
-
+nav {
+    background-color: rgb(17, 17, 17);
+}
 .nav-links li a::after{
     content: "";
-    background: rgba(233, 131, 6, 0.733);
+    background: rgba(212, 35, 11, 0.733);
     width: 0;
     height: 3px;
     position: absolute;
     bottom: 0;
     left: 0;
     transition: width 1s;
+    
 }
 
 li a:hover::after{
@@ -70,14 +77,14 @@ li a:hover::after{
 }
 .banner > .banner-image {
     width: 100%;
-    height: 200px;
-    display: block;
-
+    height: 170px;
+    
 }
 .img-me {
-    width: 150px;
-    position: relative;
-    margin-top: -167px;
+    width: 158px;
+    margin-top: -300px;
+    margin-left: 60px;
+    border: solid 3px rgb(97, 138, 151);
 }
 aside {
     margin-left: 200px;
@@ -96,6 +103,7 @@ aside {
     font-size: 225%;
     margin-left: 175px;
     margin-bottom: 20px;
+    text-align: center;
 }
 #work {
     font-size: 225%;
@@ -107,19 +115,17 @@ p {
     margin-top: 25px;
     margin-left: 20%;
     margin-right: 100px;
-    border-left: 2px solid rgba(233, 131, 6, 0.733);
+    border-left: 2px solid rgba(212, 35, 11, 0.733);
     padding-left: 2%;
     padding-top: 20px;
     padding-bottom: 20px;
     line-height: 150%;
 }
-.containers {
-    border-left: 2px solid rgba(233, 131, 6, 0.733);
-}
+
 .stack {
     width: 746px;
     height: 40px;
-    border: 5px solid darkcyan;
+    border: 5px solid rgb(179, 179, 255);
     padding: 160px;
     margin-left: 550px;
     margin-right: 268px;
@@ -133,11 +139,11 @@ p {
 .box{
     width: 150px;
     height: 50px;
-    background-color: darkcyan;
+    background-color:rgb(179, 179, 255);
     margin-left: -77px;
     margin-top: 10px;
     padding-bottom: 0px;
-    color: antiquewhite;
+    color: rgb(83, 59, 26);
     font-family:monospace;
 
 }
@@ -146,7 +152,7 @@ p {
     float: right;
     width: 375px;
     height: 20px;
-    border: 5px solid darkcyan;
+    border: 5px solid rgb(179, 179, 255);
     padding: 75px;
     margin-left: 550px;
     margin-right: 268px;
@@ -157,7 +163,7 @@ p {
 .java {
     width: 375px;
     height: 20px;
-    border: 5px solid darkcyan;
+    border: 5px solid rgb(179, 179, 255);
     padding: 75px;
     margin-left: 550px;
     margin-right: 268px;
@@ -169,7 +175,7 @@ p {
     float: right;
     width: 375px;
     height: 20px;
-    border: 5px solid darkcyan;
+    border: 5px solid rgb(179, 179, 255);
     padding: 75px;
     margin-left: 550px;
     margin-right: 268px;
@@ -179,7 +185,7 @@ p {
 .css {
     width: 375px;
     height: 20px;
-    border: 5px solid darkcyan;
+    border: 5px solid rgb(179, 179, 255);
     padding: 75px;
     margin-left: 550px;
     margin-right: 268px;
@@ -193,16 +199,17 @@ footer {
     width: 50%;
     height: 25px;
     padding-bottom: 100px;
-    background-color: white;
+    background-color: rgb(67, 81, 110);
     color: black;
     font-size: 110%;
     margin-top: 2%;
     margin-bottom: 2%;
 }
 footer p {
-    text-decoration:  3px underline darkcyan;
+    text-decoration:  2px underline darkcyan;
     border-left: none;
-    margin-left: 210px;
+    margin-left: 230px;
+    color: bisque;
 }
 
 footer a:hover {
@@ -210,7 +217,12 @@ footer a:hover {
     font-size: larger;
     transition: .5s;
 }
-
+footer a:visited {
+    color: bisque;
+}
+footer a {
+    background-color: rgb(67, 81, 110);
+}
 @media screen and (max-width: 1800px) {
 
     header {
@@ -291,6 +303,7 @@ footer a:hover {
         font-size: 200%;
         transition: .5s;
     }
+    
     .containers {
         display:flex;
         flex-wrap: wrap;
@@ -300,7 +313,9 @@ footer a:hover {
     .stack {
         width: 205px;
     }
-
+    li {
+        background-color:rgb(17, 17, 17);
+    }
     
 }
     
