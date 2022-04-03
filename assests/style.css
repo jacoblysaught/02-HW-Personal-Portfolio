@@ -26,7 +26,6 @@ h1 {
     padding-bottom: 5px;
 }
 
-
 nav ul {
     display: flex;
     align-items: center;
@@ -62,7 +61,7 @@ nav {
     position: absolute;
     bottom: 0;
     left: 0;
-    transition: width 1s;
+    transition: width .5s;
     
 }
 
@@ -115,23 +114,26 @@ p {
     margin-top: 25px;
     margin-left: 20%;
     margin-right: 100px;
-    border-left: 2px solid rgba(212, 35, 11, 0.733);
+    border-left: 1.5px solid rgba(212, 35, 11, 0.733);
     padding-left: 2%;
     padding-top: 20px;
     padding-bottom: 20px;
     line-height: 150%;
 }
-
+.containers {
+    border-left: 2.5px solid rgba(212, 35, 11, 0.733);
+    border-radius: 800px;
+}
 .stack {
     width: 746px;
-    height: 40px;
+    height: 10px;
     border: 5px solid rgb(179, 179, 255);
     padding: 160px;
     margin-left: 550px;
     margin-right: 268px;
-    background-image: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
-    
+    background-image: url(https://images.unsplash.com/photo-1508896080210-93c377eb4135?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHRlY2h8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
 }
+
 .stack .box {
     margin-left: -162px;
     margin-top: 80px;
@@ -142,7 +144,7 @@ p {
     background-color:rgb(179, 179, 255);
     margin-left: -77px;
     margin-top: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 2px;
     color: rgb(83, 59, 26);
     font-family:monospace;
 
@@ -155,9 +157,9 @@ p {
     border: 5px solid rgb(179, 179, 255);
     padding: 75px;
     margin-left: 550px;
-    margin-right: 268px;
+    margin-right: 263px;
     margin-top: 1%;
-    background-image: url(https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNvZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-image: url(https://images.unsplash.com/photo-1583484963886-cfe2bff2945f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTU2fHx0ZWNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
 }
 
 .java {
@@ -178,10 +180,11 @@ p {
     border: 5px solid rgb(179, 179, 255);
     padding: 75px;
     margin-left: 550px;
-    margin-right: 268px;
+    margin-right: 263px;
     margin-top: 1%;
     background-image: url(https://images.unsplash.com/photo-1496096265110-f83ad7f96608?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHRlY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
 }
+
 .css {
     width: 375px;
     height: 20px;
@@ -190,9 +193,8 @@ p {
     margin-left: 550px;
     margin-right: 268px;
     margin-top: 1%;
-    background-image:url(https://images.unsplash.com/photo-1548092372-0d1bd40894a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fHRlY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    background-image:url(https://media.istockphoto.com/photos/abstract-technology-background-big-data-digital-line-wave-business-picture-id1319893380?b=1&k=20&m=1319893380&s=170667a&w=0&h=DMXxyCyMZIcOo3Pd1ArhI1mAyxLGBGnJhnxSQvUmmUQ=);
 }
-
 footer {
     display: inline-flex;
     bottom: 0;
@@ -207,9 +209,11 @@ footer {
 }
 footer p {
     text-decoration:  2px underline darkcyan;
-    border-left: none;
-    margin-left: 230px;
+    border-left: 2px solid rgba(212, 35, 11, 0.733);
+    padding-left: 40px;
+    margin-left: 185px;
     color: bisque;
+    
 }
 
 footer a:hover {
@@ -267,6 +271,9 @@ footer a {
         margin-left: 150px;
         font-size: 120%;
         display: block;
+    }
+    footer p {
+        border-left: 0;
     }
 }
 
